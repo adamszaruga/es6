@@ -27,10 +27,12 @@ function myFunction() {
 // The "let" keyword defines variables in "block scope". Otherwise, it behaves like a normal variable
 
 // BLOCK SCOPE EXAMPLE
-if (1 === 1) {
+if (true) {
     let carName = "Volvo"
     var otherName = "BMW"
 }
+
+
 // code here can NOT use carName
 // but it can use otherName
 
@@ -40,3 +42,22 @@ const PI = 3.141592653589793;
 PI = 3.14;      // This will give an error
 PI = PI + 10;   // This will also give an error
 
+
+const vera = "good girle";
+
+const jager = {
+    key: "good boye"
+}
+
+vera = "dog"; // error
+
+jager.key = "dog"; // no error
+
+jager
+
+
+
+
+for (const i=0; i<10; i++ ) {
+
+}

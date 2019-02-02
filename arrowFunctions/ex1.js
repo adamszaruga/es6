@@ -17,3 +17,32 @@ let boringFunction = function (topic) {
 let shout = function() {
     return "AAAHHHH!!"
 }
+// Jeff's code
+let introduction = (name, otherName) => {
+    let introduction = name + ", let me introduce you to " + otherName;
+    return introduction;                                    
+}
+
+
+//Jordan 
+let introduction = (name, otherName) => {
+    let introduction = name + ", let me introduce you to " + otherName;
+    return introduction;
+}
+
+
+
+
+// Ron's coding
+
+let introduction = (name, otherName) => {
+    let introduction = name + ", let me introduce you to " + otherName;
+    return introduction;
+}
+// End Ron's code
+
+
+
+
+
+

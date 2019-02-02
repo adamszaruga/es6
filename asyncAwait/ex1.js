@@ -9,3 +9,34 @@ let getDogsOwnersBestFriend = () => {
         return friend.name;
     })
 }
+
+let getDogsOwnersBestFriend = async () => {
+    let dog = await get('/dog/1')
+    let owner = await get(`owner/${dog.owner}`);
+    let ownersBestFriend = await get(`/friend/${owner.bestFriend}`);
+    return ownersBestFriend.name        
+}
+
+
+
+
+//Jordan 
+
+let getDogsOwnersBestFriend = async ()=>{
+    let dog = await axios.get('/dog/1');
+    let owner = await axios.get(`/owner/${dog.owner}`);
+    let bf = await axios.get(`/friend/${owner.bestFriend}`);
+    return bf.name; ////?????
+
+    
+                
+}
+
+// Jeff's code
+let getDogsOwnersBestFriend = async () =>
+
+
+
+
+
+

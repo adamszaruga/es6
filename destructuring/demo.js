@@ -1,5 +1,5 @@
 // You're already used to "packing" things into new arrays and objects, like so:
-let array = [ 1, 2, "foo"];
+let array = [ 1, 2, "foo" ];
 let object = {
     key1: "hello",
     key2: "goodbye"
@@ -37,7 +37,19 @@ let { key1: firstKey } = object;
 firstKey === "hello";
 
 // Also, if a value doesn't exist, you can provide a fallback value in your destructuring assignment:
+
+
 let { key1 = "hi", key3 = "sup"} = object;
+
 key1 === "hello";
 key3 === "sup";
 
+
+
+let [ first, second, third, fourth = "nothere" ] = array;
+
+
+
+function myFunction({ data }) {
+    console.log(data);
+}

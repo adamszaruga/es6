@@ -6,22 +6,15 @@ let email = "sg@suegeller.com";
 
 
 // This is how we would do it with ES5 Javascript:
-let obj = {
+var obj = {
     id: id,
     firstName: firstName,
     lastName: lastName,
-    email: email,
-    passwordHash: passwordHash
+    email: email
 }
 
 // ^^^ Notice how redundant that was! ES6 gives us a short cut:
-let obj2 = {
-    id, 
-    firstName,
-    lastName,
-    email,
-    password
-}
+let obj2 = { id, firstName, lastName, email, password };
 
 // ^^^ We're still creating an object literal with { }. 
 // The keys of this new object are the variable names themselves
@@ -38,6 +31,13 @@ let obj3 = {
 // But wait, there's more! If your object has a key that points to a function, 
 //   you can define your function inline, like so:
 
+var obj3 = {
+    name: "Adam",
+    shout: function() {
+        
+    }
+}
+
 let obj3 = {
     name: "Adam",
     shout() {
@@ -51,6 +51,55 @@ obj3.shout();
 let keyToWrite = "key2";
 
 let obj4 = {
-    [keyToWrite]: "hi"
+    ["hello" + i]: "hi"
 }
-obj4.key2 === "hi";
+obj4.hello1 === "hi";
+
+let obj5 = {
+    keyToWrite: "hi"
+}
+obj5.keyToWrite === "hi"
+
+var
+
+
+
+
+var array = ["name", "age", "occupation"];
+
+for (let i=0; i<array.length; i++){
+    let currentField = array[i];
+
+    let payload = {
+        [currentField]: "somevalue"
+    }
+
+    axios.post('/data', payload);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var object = {
+    foo: "bar",
+    foofoo: ["foo", "foo"],
+    fun() {
+        return "aslkjfads" + this.foo
+    }
+}
+
+object.fun().length

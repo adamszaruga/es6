@@ -42,3 +42,13 @@ let defaults = function(name, age, occupation) {
     occupation = occupation || "unemployed";
     return name + age + occupation
 }
+
+let obj = {
+    foo: "bar",
+    fun1: function(){
+        return this.foo // undefined
+    },
+    fun2: () => {
+        return this.foo // bar
+    }
+}

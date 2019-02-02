@@ -8,3 +8,16 @@ let object = {
 //   Fix this line of code by providing a fallback value for "author"
 
 let { author } = object;
+
+
+//Jeff's code
+let { author = "Jeff Hargis"} = object;
+
+
+//Pamela
+let { author = "Harper Lee"} = object;
+
+
+// Ron
+
+let { author = "Ron Cagle" } = object;
